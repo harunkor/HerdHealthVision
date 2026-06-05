@@ -94,8 +94,8 @@ Actual Mastitis   0      3        1       30
 ### Setup
 
 ```bash
-git clone https://github.com/harunkor/herd-health-vision.git
-cd herd-health-vision
+git clone https://github.com/harunkor/HerdHealthVision.git
+cd HerdHealthVision
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```

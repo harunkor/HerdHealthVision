@@ -2,7 +2,6 @@
 data/
 
 # Model çıktıları — repoda tutmak için Git LFS kullan: git lfs track "*.pt"
-models/*.pt
 !models/classes.json
 
 # Python

@@ -309,6 +309,7 @@ with gr.Blocks(theme=gr.themes.Soft(), css=CSS) as demo:
     gr.HTML("""
     <div class="footer">
         Herd Health Vision v1 &mdash; EfficientNet-B2 &bull; PyTorch &bull; Gradio<br>
+        <a href="https://github.com/harunkor/HerdHealthVision" target="_blank" style="color:#888; text-decoration:none;">GitHub</a> &bull;
         Open-source datasets: Kaggle &bull; Zenodo &bull; Mendeley Data
     </div>
     """)

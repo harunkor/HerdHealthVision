@@ -1,0 +1,25 @@
+# Veri repoya girmez (büyük + modelin içinde değil)
+data/
+
+# Model çıktıları — repoda tutmak için Git LFS kullan: git lfs track "*.pt"
+models/*.pt
+!models/classes.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE / OS / Tool config
+.vscode/
+.idea/
+.DS_Store
+.claude/
+
+# Project tracking
+AGENT.md
+
+# Downloads
+_downloads/

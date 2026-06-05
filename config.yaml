@@ -1,0 +1,37 @@
+# ============================================================
+# PROJECT CONFIGURATION
+# Tüm ayarlar buradan yönetilir. Sınıf / model / hiperparametre
+# değişikliklerini kodda değil burada yap.
+# ============================================================
+
+project:
+  name: "herd-health-vision"
+  description: "Livestock disease pre-screening from images (classification)"
+
+# Hastalık sınıfları. "healthy" mutlaka olsun.
+# ascii, boşluksuz, küçük harf (klasör + model çıktısı olarak kullanılır).
+classes:
+  - healthy
+  - lumpy_skin          # nodüler ekzantem
+  - foot_and_mouth      # şap
+  - mastitis
+
+model:
+  architecture: "efficientnet_b2"   # alternatif: resnet50, efficientnet_b0
+  pretrained: true                  # ImageNet ağırlıklarıyla başla (fine-tune)
+  image_size: 224
+
+training:
+  batch_size: 16          # M4 16GB güvenli; 24GB+ ise 32
+  epochs: 15
+  learning_rate: 0.0001
+  num_workers: 2          # Mac'te 0 veya 2
+  early_stopping_patience: 5
+  min_images_per_class: 50   # Phase 2 bu eşiğin altını "yetersiz" sayar
+
+paths:
+  data_root: "data"
+  train: "data/train"
+  val: "data/val"
+  model_out: "models/herd_health_model.pt"
+  classes_out: "models/classes.json"

@@ -1,0 +1,188 @@
+{
+  "accuracy": 0.894,
+  "total_samples": 1045,
+  "correct": 934,
+  "per_class": {
+    "foot_and_mouth": {
+      "precision": 0.912,
+      "recall": 0.916,
+      "f1": 0.914,
+      "support": 239
+    },
+    "healthy": {
+      "precision": 0.886,
+      "recall": 0.865,
+      "f1": 0.875,
+      "support": 414
+    },
+    "lumpy_skin": {
+      "precision": 0.896,
+      "recall": 0.913,
+      "f1": 0.905,
+      "support": 358
+    },
+    "mastitis": {
+      "precision": 0.833,
+      "recall": 0.882,
+      "f1": 0.857,
+      "support": 34
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "foot_and_mouth",
+      "healthy",
+      "lumpy_skin",
+      "mastitis"
+    ],
+    "matrix": [
+      [
+        219,
+        14,
+        3,
+        3
+      ],
+      [
+        19,
+        358,
+        34,
+        3
+      ],
+      [
+        2,
+        29,
+        327,
+        0
+      ],
+      [
+        0,
+        3,
+        1,
+        30
+      ]
+    ]
+  },
+  "errors_count": 111,
+  "top_errors": [
+    {
+      "file": "data/val/foot_and_mouth/ds4_Cow-mouth-with-teeth-1_jpg.rf.a9c236bf6340651ed8daa2cd99650d17.jpg",
+      "true": "foot_and_mouth",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/healthy/Cows head, open mouth 13.jpg",
+      "true": "healthy",
+      "predicted": "foot_and_mouth",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/healthy/ds2_Normal_Skin_347.png",
+      "true": "healthy",
+      "predicted": "lumpy_skin",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/healthy/imgs227.jpg",
+      "true": "healthy",
+      "predicted": "lumpy_skin",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/lumpy_skin/img1173.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/lumpy_skin/img1208.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/lumpy_skin/img1214.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/lumpy_skin/img1349.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/lumpy_skin/img1363.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "file": "data/val/healthy/Dorsal side of tongue 3.jpg",
+      "true": "healthy",
+      "predicted": "foot_and_mouth",
+      "confidence": 0.999
+    },
+    {
+      "file": "data/val/healthy/ds4_sapi_v_8.jpg",
+      "true": "healthy",
+      "predicted": "foot_and_mouth",
+      "confidence": 0.999
+    },
+    {
+      "file": "data/val/healthy/imgs377.jpg",
+      "true": "healthy",
+      "predicted": "lumpy_skin",
+      "confidence": 0.999
+    },
+    {
+      "file": "data/val/lumpy_skin/ds4_img1173_jpg.rf.6057e41f46af8dd6739b9111d5133cb4.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 0.999
+    },
+    {
+      "file": "data/val/healthy/imgs376.jpg",
+      "true": "healthy",
+      "predicted": "lumpy_skin",
+      "confidence": 0.998
+    },
+    {
+      "file": "data/val/lumpy_skin/img1309.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 0.998
+    },
+    {
+      "file": "data/val/lumpy_skin/img1397.jpg",
+      "true": "lumpy_skin",
+      "predicted": "healthy",
+      "confidence": 0.998
+    },
+    {
+      "file": "data/val/foot_and_mouth/ds4_ct 1-1 (1)WM-1.jpg",
+      "true": "foot_and_mouth",
+      "predicted": "mastitis",
+      "confidence": 0.997
+    },
+    {
+      "file": "data/val/healthy/ds4_sapi_d_1.jpg",
+      "true": "healthy",
+      "predicted": "foot_and_mouth",
+      "confidence": 0.997
+    },
+    {
+      "file": "data/val/foot_and_mouth/ds4_ct 2-3-1 (1)WM-1.jpg",
+      "true": "foot_and_mouth",
+      "predicted": "healthy",
+      "confidence": 0.995
+    },
+    {
+      "file": "data/val/healthy/ds2_Normal_Skin_289.png",
+      "true": "healthy",
+      "predicted": "lumpy_skin",
+      "confidence": 0.995
+    }
+  ]
+}

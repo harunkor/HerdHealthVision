@@ -1,5 +1,5 @@
-# Veri repoya girmez (büyük + modelin içinde değil)
-data/
+# Veri
+# data/
 
 # Model çıktıları — repoda tutmak için Git LFS kullan: git lfs track "*.pt"
 !models/classes.json
